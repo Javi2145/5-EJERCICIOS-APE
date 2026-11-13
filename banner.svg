@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#1f3b46"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00ff9d"/>
+      <stop offset="1" stop-color="#7dffcf"/>
+    </linearGradient>
+    <linearGradient id="sep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00ff9d" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00ff9d" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00ff9d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="screenFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d4a3c"/>
+      <stop offset="1" stop-color="#082a22"/>
+    </linearGradient>
+
+    <clipPath id="screenClip"><rect x="822" y="190" width="130" height="75" rx="2"/></clipPath>
+
+    <!-- Onda de red -->
+    <path id="wave" d="M 162 250 Q 200 218 238 250 T 314 250 T 390 250 T 466 250 T 542 250 T 618 250 T 694 250 T 770 250 L 812 250"/>
+  </defs>
+
+  <rect width="1000" height="360" fill="url(#bg)"/>
+
+  <g transform="translate(0,20)">
+
+    <!-- Estrellas -->
+    <g fill="#ffffff">
+      <circle cx="90" cy="40" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="60" cy="95" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="45" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="100" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="930" cy="60" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.5s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="180" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Titulo principal -->
+    <text x="500" y="135" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="4" fill="url(#txt)">5 EJERCICIOS APE</text>
+
+    <!-- Separador -->
+    <rect x="220" y="156" width="560" height="2" fill="url(#sep)"/>
+
+    <!-- ===== TECLADO (izquierda) ===== -->
+    <g>
+      <!-- Resplandor suave -->
+      <ellipse cx="72" cy="249" rx="70" ry="38" fill="#00ff9d" opacity="0.07">
+        <animate attributeName="opacity" values="0.04;0.12;0.04" dur="2.4s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Cuerpo del teclado -->
+      <rect x="14" y="224" width="116" height="50" rx="7" fill="#07140f" stroke="#00ff9d" stroke-width="2"/>
+      <rect x="18" y="228" width="108" height="42" rx="4" fill="#0b3a30" opacity="0.55"/>
+
+      <!-- Teclas (algunas se iluminan al "escribir") -->
+      <g fill="#0f5f55">
+        <rect x="21.5" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="33" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="44.5" y="231" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></rect>
+        <rect x="56" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="67.5" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="79" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="90.5" y="231" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="0.7s" repeatCount="indefinite"/></rect>
+        <rect x="102" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="113.5" y="231" width="9" height="7" rx="1.5"/>
+        <rect x="27.25" y="241" width="9" height="7" rx="1.5"/>
+        <rect x="38.75" y="241" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="0.3s" repeatCount="indefinite"/></rect>
+        <rect x="50.25" y="241" width="9" height="7" rx="1.5"/>
+        <rect x="61.75" y="241" width="9" height="7" rx="1.5"/>
+        <rect x="73.25" y="241" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="1.1s" repeatCount="indefinite"/></rect>
+        <rect x="84.75" y="241" width="9" height="7" rx="1.5"/>
+        <rect x="96.25" y="241" width="9" height="7" rx="1.5"/>
+        <rect x="107.75" y="241" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="1.7s" repeatCount="indefinite"/></rect>
+        <rect x="33" y="251" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="0.5s" repeatCount="indefinite"/></rect>
+        <rect x="44.5" y="251" width="9" height="7" rx="1.5"/>
+        <rect x="56" y="251" width="9" height="7" rx="1.5"/>
+        <rect x="67.5" y="251" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="1.4s" repeatCount="indefinite"/></rect>
+        <rect x="79" y="251" width="9" height="7" rx="1.5"/>
+        <rect x="90.5" y="251" width="9" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="2.0s" repeatCount="indefinite"/></rect>
+        <rect x="102" y="251" width="9" height="7" rx="1.5"/>
+        <rect x="21.5" y="261" width="9" height="7" rx="1.5"/>
+        <rect x="33" y="261" width="9" height="7" rx="1.5"/>
+        <rect x="44" y="261" width="56" height="7" rx="1.5"><animate attributeName="fill" values="#0f5f55;#00ff9d;#0f5f55;#0f5f55" keyTimes="0;0.12;0.3;1" dur="2.4s" begin="0.9s" repeatCount="indefinite"/></rect>
+        <rect x="102" y="261" width="9" height="7" rx="1.5"/>
+        <rect x="113.5" y="261" width="9" height="7" rx="1.5"/>
+      </g>
+
+      <!-- Conexión al emisor -->
+      <path d="M 130 249 L 138 249" stroke="#00ff9d" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Emisor del teclado -->
+    <g stroke="#00ff9d" fill="none" stroke-width="1.5">
+      <circle cx="138" cy="250" r="3.5" fill="#00ff9d">
+        <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M 146 240 A 14 14 0 0 1 146 260"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></path>
+      <path d="M 154 232 A 24 24 0 0 1 154 268"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></path>
+    </g>
+
+    <!-- Red inalambrica fina y horizontal -->
+    <use href="#wave" fill="none" stroke="#00ff9d" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" from="0" to="-56" dur="1.6s" repeatCount="indefinite"/>
+    </use>
+    <use href="#wave" fill="none" stroke="#d1fae5" stroke-width="0.8" stroke-dasharray="2 14" opacity="0.8" transform="translate(0,6)">
+      <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="1.2s" repeatCount="indefinite"/>
+    </use>
+    <g fill="#ffffff">
+      <circle r="3"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#wave"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="3s" begin="1s" repeatCount="indefinite"><mpath href="#wave"/></animateMotion></circle>
+      <circle r="3"><animateMotion dur="3s" begin="2s" repeatCount="indefinite"><mpath href="#wave"/></animateMotion></circle>
+    </g>
+
+    <!-- ===== MONITOR (derecha) ===== -->
+    <!-- Pulso de recepción -->
+    <circle cx="812" cy="250" r="6" fill="#00ff9d" opacity="0.6">
+      <animate attributeName="r" values="4;18;4" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Base y soporte -->
+    <rect x="877" y="275" width="20" height="18" fill="#07140f" stroke="#00ff9d" stroke-width="1.5"/>
+    <rect x="852" y="293" width="70" height="7" rx="3.5" fill="#07140f" stroke="#00ff9d" stroke-width="1.5"/>
+
+    <!-- Marco y pantalla -->
+    <rect x="812" y="170" width="150" height="105" rx="8" fill="#07140f" stroke="#00ff9d" stroke-width="2"/>
+    <rect x="820" y="178" width="134" height="89" rx="4" fill="url(#screenFill)"/>
+    <circle cx="950" cy="271" r="1.4" fill="#00ff9d">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Barra superior de la ventana -->
+    <g fill="#00ff9d" opacity="0.7">
+      <circle cx="828" cy="184" r="1.8"/>
+      <circle cx="835" cy="184" r="1.8"/>
+      <circle cx="842" cy="184" r="1.8"/>
+    </g>
+    <rect x="862" y="182" width="60" height="4" rx="2" fill="#0f7a66"/>
+
+    <!-- Código binario en la pantalla -->
+    <g clip-path="url(#screenClip)">
+      <text x="826" y="199" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75">10100010 00011000 10000100
+        <animate attributeName="opacity" values="1;0" calcMode="discrete" dur="1.10s" begin="0.0s" repeatCount="indefinite"/></text>
+      <text x="826" y="199" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75" opacity="0">00110010 00100001 11111100
+        <animate attributeName="opacity" values="0;1" calcMode="discrete" dur="1.10s" begin="0.0s" repeatCount="indefinite"/></text>
+      <text x="826" y="209" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#00ff9d">01010000 01001000 01000001</text>
+      <text x="826" y="219" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75">00111110 01010110 01111100
+        <animate attributeName="opacity" values="1;0" calcMode="discrete" dur="1.60s" begin="0.3s" repeatCount="indefinite"/></text>
+      <text x="826" y="219" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75" opacity="0">11001111 10110010 01001110
+        <animate attributeName="opacity" values="0;1" calcMode="discrete" dur="1.60s" begin="0.3s" repeatCount="indefinite"/></text>
+      <text x="826" y="229" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#00ff9d">01010010 01001101 01000001</text>
+      <text x="826" y="239" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75">01110111 11000000 00101100
+        <animate attributeName="opacity" values="1;0" calcMode="discrete" dur="2.10s" begin="0.6s" repeatCount="indefinite"/></text>
+      <text x="826" y="239" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75" opacity="0">11100111 11011000 01001000
+        <animate attributeName="opacity" values="0;1" calcMode="discrete" dur="2.10s" begin="0.6s" repeatCount="indefinite"/></text>
+      <text x="826" y="249" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#00ff9d">01010011 01011001 01010011</text>
+      <text x="826" y="259" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75">00100010 11110011 11100011
+        <animate attributeName="opacity" values="1;0" calcMode="discrete" dur="2.60s" begin="0.9s" repeatCount="indefinite"/></text>
+      <text x="826" y="259" font-family="Courier New, Consolas, monospace" font-size="7.6" font-weight="700" textLength="122" lengthAdjust="spacing" fill="#1fbf8f" fill-opacity="0.75" opacity="0">10001001 01101010 00100110
+        <animate attributeName="opacity" values="0;1" calcMode="discrete" dur="2.60s" begin="0.9s" repeatCount="indefinite"/></text>
+
+      <!-- Barrido de escaneo -->
+      <rect x="822" y="191" width="130" height="9" fill="#00ff9d" opacity="0.14">
+        <animate attributeName="y" values="188;262;188" dur="4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Cursor parpadeante -->
+    <rect x="945" y="260" width="5" height="6" fill="#00ff9d">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
